@@ -1,49 +1,56 @@
-@media only screen and (max-width: 600px) and (min-width: 400px)  {
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+*{
+box-sizing: border-box;
+font-family:"Poppins",sans-serif;
+margin: 0;
+padding: 0;
 
 }
-  
 
-
-.row
+.card
 {
-    
-}
-.hey
-{
-    width: 40px;
-    height: 40px;
-    padding: 3.5rem;
-    margin: 10rem;
+    padding: 6rem;
+    margin: 5rem;
     font-size: 1rem;
     position: absolute;
     top: 8rem;
     color:black;
-    width: 15rem;
-    height: 13rem;
-    background-color: rgb(48, 60, 60);
-    
-    transition: transform .2s;  
+    background-color: white;
+    transition: transform .2s;
 }
-
-
 
 
 .card:hover{
     cursor: pointer;
-    background-color: #6D6087;
+    background-color: #f6f2ff;
     transform: scale(1.1);
     color: white;
-    
+
 }
 
+.bigcontainer{
+
+    display: flex;
+
+height: 50vh;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+    .hey{
+    
+    height: 25rem;
+    position: relative;
+ 
+    max-width: 25rem;
+    width: 100%;
+ 
+  }
+ 
 body
-{   height: 745px;
-    margin: 0;
+{   height: 100vh;
+  
     background-repeat: no-repeat;
-    
-    background-image: linear-gradient(#b1388c,#47b2e4);
-    
-    
-    
-}
+    background: linear-gradient(#f17ecf,#47b2e4);
+
