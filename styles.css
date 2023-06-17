@@ -1,0 +1,49 @@
+@media only screen and (max-width: 600px) and (min-width: 400px)  {
+
+
+}
+  
+
+
+.row
+{
+    
+}
+.hey
+{
+    width: 40px;
+    height: 40px;
+    padding: 3.5rem;
+    margin: 10rem;
+    font-size: 1rem;
+    position: absolute;
+    top: 8rem;
+    color:black;
+    width: 15rem;
+    height: 13rem;
+    background-color: rgb(48, 60, 60);
+    
+    transition: transform .2s;  
+}
+
+
+
+
+.card:hover{
+    cursor: pointer;
+    background-color: #6D6087;
+    transform: scale(1.1);
+    color: white;
+    
+}
+
+body
+{   height: 745px;
+    margin: 0;
+    background-repeat: no-repeat;
+    
+    background-image: linear-gradient(#b1388c,#47b2e4);
+    
+    
+    
+}
