@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text to Speech</title>
+    <link rel="stylesheet" href="t_s.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <br>
+    <a href="index.html"><i class="fa fa-home" style="font-size:48px;color:rgb(33, 28, 108);margin-left: 20px;"></i></a>
+    
+    <div class="bigcontainer">
+    <div class="container">
+        <header><b>Text to Speech</b></header>
+        <textarea  id="a" placeholder="Text"></textarea>
+        <button id="b">Convert to Speech</button>
+    </div>
+</div>
+<script >
+
+    //For text to speech
+    const textarea=document.querySelector("textarea");
+        const button= document.querySelector("button");
+        
+        function texttospeech(text){
+            let utterance=new SpeechSynthesisUtterance(text);
+            speechSynthesis.speak(utterance);
+        }
+        
+        button.addEventListener("click",e =>{
+            e.preventDefault();
+            if(textarea.value!=""){
+                texttospeech(textarea.value);
+            }
+        });
+
+
+
+</script>
+
+</body>
+</html>

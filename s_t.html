@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Speech to Text</title>
+    <link rel="stylesheet" href="t_s.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <br>
+ <a href="index.html"><i class="fa fa-home" style="font-size:48px;color:rgb(33, 28, 108);margin-left: 20px;"></i></a>   
+     <div class="bigcontainer">
+    <div class="container">
+        <header><b>Speech to Text</b></header>
+        <textarea  id="a" placeholder="Text"></textarea>
+        <button id="b">Start Recording</button>
+    </div>
+</div>
+
+<script >
+
+       //For speech to text    
+       document.querySelector('#b').onclick=function(){
+        document.getElementById("a").value="..."
+        document.getElementById("b").textContent="Recording..."
+        var recognition=new webkitSpeechRecognition();
+        recognition.lang="en-GB"
+        recognition.onresult=function(event){
+            document.getElementById("b").textContent="Start Recording"
+            document.getElementById("a").value=event.results[0][0].transcript;
+        }
+        recognition.start();
+    }
+</script>
+</body>
+</html>
