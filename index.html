@@ -1,28 +1,51 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Textify</title>
-    <link rel="stylesheet" href="textify.css">
-  </head>
-  <body>
-    <h1 style="text-align: center; margin-top: 25px; font-size: 50px" ><b>Textify</b></h1>
-    <h3 style="text-align: center; margin-top: 25px; font-size: 25px" >Your Text, Your Voice</h3>
-    <div class="bigcontainer">
-    <div class="container1">
-        <header><b>Text to Speech</b></header>
-        <textarea  placeholder="Enter text"></textarea>
-        <button >Convert to Speech</button>
-    </div>
-    <div class="container">
-        <header><b>Speech to Text</b></header>
-        <textarea  id="a" placeholder="Text"></textarea>
-        <button id="b">Start Recording</button>
-    </div>
-</div>
-<script src="textify.js"></script>
+<head>
+  <link rel="stylesheet" href="./styles.css">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"crossorigin="anonymous">
 
-  </body>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Textify</title>
+</head>
+<body>
+
+    <h1 style="text-align: center; margin-top: 25px; font-size: 50px" ><b><span class="auto-type"></span></b></h1>
+    <h3 style="text-align: center; margin-top: 25px; font-size: 25px" ><i><span class="auto-type2"></span></i></h3>
+  
+<div class="bigcontainer" style="padding: 0;">
+
+        <div class="card" style="width: 25rem; height: 25rem; border-radius: 20px;">
+            <img src="s_t.png" class="card-img-top" alt="..."style="display: block; object-fit: fill; height: fit-content; " >
+            <br>           
+            <a href="s_t.html" class="btn btn-outline-primary" style="margin-left: 0px; font-size: larger;"><b>Speech to Text</b></a>
+        </div>
+
+        <div class="card" style="width: 25rem; height: 25rem; border-radius: 20px;">
+            <img src="text-to-speech-2100923-1763880.webp" class="card-img-top" alt="..." style="display: block; object-fit: fill; height: fit-content; " >
+        <br> 
+              <a href="t_s.html" class="btn btn-outline-primary" style="margin-left: 0px; font-size: larger;"><b>Text to Speech</b></a>
+        </div>
+        
+</div>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script>
+var typed=new Typed(".auto-type",{
+    strings:["Textify"],
+    typeSpeed: 70,
+    loop: false  
+})
+
+var typed=new Typed(".auto-type2",{
+    strings:["Your text, Your voice..."],
+    typeSpeed: 50,
+    loop: false  
+}
+
+)
+
+</script>
+
+</body>
 </html>
